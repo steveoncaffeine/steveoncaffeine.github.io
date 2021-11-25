@@ -4736,9 +4736,9 @@ button.close {
   }
 }
 body {
-  background-image: -webkit-linear-gradient(top, #ff0060, #ff6975);
+  background-image: -webkit-linear-gradient(top, #60ff60, #ff6975);
   background-image: -o-linear-gradient(top, #ff0060 0, #ff6975 100%);
-  background-image: linear-gradient(180deg, #ff0060 0, #ff6975);
+  background-image: linear-gradient(180deg, #7500ff, #00ff00);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFF0060",endColorstr="#FFFF6975",GradientType=0);
 }
