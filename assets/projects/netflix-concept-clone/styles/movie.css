@@ -1,0 +1,48 @@
+:root {
+  --primary: #000000;
+  --light: #f3f3f3;
+  --dark: #686868;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+iframe {
+  border-radius: 15px;
+}
+
+.video {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.box a {
+  transition: transform 0.3s;
+}
+
+.box a:hover {
+  transition: transform 0.3s;
+  -ms-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.box img {
+  border-radius: 10px;
+}

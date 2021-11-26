@@ -1,0 +1,946 @@
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Manrope&display=swap");
+
+/* Gilda Display: Serif, Manrope: Sans-Serif */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-sec {
+  display: flex;
+  font-family: "Gilda Display", serif;
+  height: 86px;
+  background-color: #ffffff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 0px 7px #000000;
+}
+
+.nile-logo {
+  flex: 1 200px;
+  padding: 20px 10px 10px 150px;
+}
+
+.nile-logo img {
+  width: 200px;
+  height: 42px;
+}
+
+#opt-fees {
+  padding-right: 20px;
+}
+
+.nav-bar {
+  flex: 2;
+}
+
+.nav-bar i {
+  font-size: 15px;
+  margin: 10px 15px 0px 15px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2em;
+}
+
+.nav-bar a:hover {
+  color: #0e55a7;
+}
+
+#nav-fees {
+  padding-right: 15px;
+}
+
+.menu-inner {
+  display: inline-block;
+  height: 45px;
+  position: relative;
+}
+
+#drag-handle {
+  width: 40px;
+  height: 30px;
+  margin-top: 15px;
+  margin-right: 100px;
+  position: absolute;
+  top: 7px;
+}
+
+.notice {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  background: #0e55a7;
+  color: #ffffff;
+  margin-top: 86px;
+}
+
+.notice p {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.notice #arrow-right {
+  display: inline-block;
+  padding-top: 50px;
+  position: relative;
+}
+
+.notice img {
+  position: absolute;
+  height: 40px;
+  width: 30px;
+  top: 22px;
+}
+
+.slide-btn {
+  background-color: #0e55a7;
+  padding: 15px 20px 15px 20px;
+  width: 175px;
+  font-family: "Manrope", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.slides-container {
+  max-width: 100%;
+  position: relative;
+  background: black;
+}
+
+/* Hide the images by default */
+.slide {
+  display: none;
+  position: relative;
+  top: 0;
+  height: 550px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-family: "Gilda Display", serif;
+}
+
+/* Next & previous buttons */
+#prev,
+#next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover,
+#next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 17px;
+  width: 17px;
+  margin: 0 2px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #c7c7c7;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #ffffff;
+  border: 2px #c7c7c7;
+  border: 2 solid #c7c7c7;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+
+@keyframes fade {
+  0% {
+    transform: translateX(200%);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.slide-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/slides/slider-5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.slide-two {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/slides/slider1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.slide-three {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/slides/slider2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.slide-four {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/slides/slider-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.slide-five {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/slides/slider4.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.slide-six {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/slides/slider5.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.slide-seven {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/slides/slider-7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+#dot-cnt {
+  position: absolute;
+  bottom: 3px;
+  left: 40%;
+}
+
+.slide-content {
+  position: absolute;
+  left: 13%;
+  top: 28%;
+  padding-right: 100px;
+}
+
+.slide-content p:first-child {
+  font-size: 40px;
+  margin: 10px 0px 60px 0px;
+}
+
+.slide-content p:nth-child(2) {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  margin: 20px 0px 50px 0px;
+}
+
+.slide-three p:first-child {
+  margin-bottom: 30px;
+}
+
+.slide-three p:nth-child(2) {
+  margin-top: 0px;
+}
+
+.slide-five p:first-child {
+  margin-bottom: 40px;
+}
+
+.slide-five p:nth-child(2) {
+  margin-right: 30%;
+  font-size: 1.3em;
+}
+
+.slide-six p:first-child {
+  margin-bottom: 30px;
+}
+
+.slide-six p:nth-child(2) {
+  margin-right: 40%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 50px 100px 50px;
+}
+
+.info-card {
+  width: 28%;
+  height: 400px;
+  background-color: #0e55a7;
+  margin: 10px;
+  border: 2px solid #0e55a7;
+  border-radius: 15px;
+}
+
+#middle-card {
+  width: 25%;
+  height: 400px;
+  background-color: #ffffff;
+  margin: 10px;
+  border: 2px solid #0e55a7;
+  border-radius: 15px;
+}
+
+.card-title {
+  padding: 30px;
+}
+
+.card-title p {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+}
+
+.card-body p {
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3em;
+  padding: 40px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.card-container hr {
+  max-width: 80%;
+  position: relative;
+  left: 10%;
+  border-top: 1px solid white;
+  border-bottom: 0px;
+}
+
+.card-container #middle-card hr {
+  border-top: 1px solid black;
+}
+
+.card-footer {
+  margin-left: 33%;
+  font-size: 1.3em;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.card-footer i {
+  margin-left: 15px;
+}
+
+#middle-card div p {
+  color: #000000;
+}
+
+#middle-card i,
+#middle-card span {
+  color: #000000;
+}
+
+#chat-header {
+  font-size: 40px;
+  font-family: "Gilda Display", serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+.chat-card-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.chat-card {
+  width: 22%;
+  height: 360px;
+  margin: 30px;
+  border-radius: 7px;
+  background-color: #0e55a7;
+  padding-top: 60px;
+  overflow: none;
+  border: 0.1px solid #dadbdd;
+  transition: 0.5s;
+}
+
+.chat-card:hover {
+  box-shadow: 0px 0px 3px black;
+  margin-top: 20px;
+  cursor: default;
+}
+
+.pfp-body {
+  position: relative;
+  background-color: #ffffff;
+  height: 300px;
+  border-bottom: 0.1px solid #dadbdd;
+  border-radius: 0px 0px 7px 7px;
+}
+
+.pfp-body img {
+  position: absolute;
+  left: 32%;
+  top: -40px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.student {
+  padding-top: 80px;
+  text-align: center;
+  font-family: "Manrope", serif;
+}
+
+.student p:first-child {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.student p:nth-child(3) {
+  padding: 15px 0 15px 0;
+  font-weight: lighter;
+}
+
+.student p:nth-child(4) {
+  padding-bottom: 10px;
+}
+
+.student hr {
+  width: 80%;
+  margin-left: 25px;
+}
+
+.chat-button {
+  margin-top: 15px;
+  margin-left: 35px;
+  border-radius: 30px;
+  width: 70%;
+  border: 1px solid #0e55a7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.5s;
+}
+
+.chat-button:hover {
+  background: #0e55a7;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.faculty-sec {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  background: url("images/faculty-sctn-img.jpeg");
+  margin-bottom: 100px;
+}
+
+.faculty-sec div:first-child {
+  width: 34%;
+  height: 600px;
+  background: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  margin: 70px 20px 50px 100px;
+}
+
+.faculty-sec div:nth-child(2) {
+  background: rgba(0, 0, 0, 0.3);
+  width: 66%;
+  height: 600px;
+}
+
+.faculty-sec div p:first-child {
+  font-size: 40px;
+  font-family: "Gilda Display", serif;
+  margin-bottom: 40px;
+}
+
+.faculty-sec div p:nth-child(2) {
+  font-size: 1.3em;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 40px;
+  font-weight: lighter;
+}
+
+.faculty-sec div p:nth-child(3) {
+  font-size: 1.3em;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 60px;
+  font-weight: lighter;
+}
+
+.fac-btn {
+  font-family: "Manrope", sans-serif;
+  background-color: #0e55a7;
+  padding: 15px 20px 15px 20px;
+  text-align: center;
+  width: 200px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.faculty-table {
+  padding-top: 50px;
+}
+
+.faculty-table table {
+  border-collapse: collapse;
+  font-size: 26px;
+  color: white;
+}
+
+.faculty-table td {
+  padding: 60px 0px 60px 30px;
+  border: 3px solid white;
+  transition: 0.5s;
+}
+
+.faculty-table i {
+  display: none;
+  margin-left: 10px;
+}
+
+.faculty-table tr:first-child td {
+  border-top: none;
+}
+
+.faculty-table tr:last-child td {
+  border-bottom: none;
+  padding-right: 110px;
+}
+
+.faculty-table td:first-of-type {
+  border-left: none;
+  padding-right: 140px;
+}
+
+.faculty-table td:last-of-type {
+  border-right: none;
+}
+
+.faculty-table td:hover {
+  background-color: #0e55a7;
+  cursor: pointer;
+}
+
+.faculty-table td:hover i {
+  display: inline;
+}
+
+.aim-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.aim-cards {
+  width: 25%;
+  height: 400px;
+  background-color: #f5f9ff;
+  margin: 20px;
+}
+
+.aim-icon img {
+  width: 80px;
+  margin-left: 38%;
+  margin-top: 75px;
+}
+
+.aim-cards p:first-of-type {
+  font-size: 40px;
+  font-family: "Gilda Display", serif;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.aim-cards p:last-of-type {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3em;
+}
+
+.logo-launch-vid {
+  margin-left: 10.5%;
+  margin-bottom: 100px;
+}
+
+.src-pres-container {
+  display: flex;
+  justify-content: center;
+}
+
+.src-pres-text {
+  width: 50%;
+  background: #f5f9ff;
+  padding: 20px;
+  height: 550px;
+}
+
+.src-pres-image {
+  margin-top: 110px;
+}
+
+.src-pres-image img {
+  width: 550px;
+  height: 350px;
+}
+
+.src-pres-text p:first-child {
+  font-size: 1.3em;
+  font-family: "Gilda Display", sans-serif;
+  padding: 30px;
+}
+
+.src-pres-text p:last-child {
+  font-size: 1.3em;
+  font-family: "Manrope", serif;
+  padding: 30px;
+  color: #0e55a7;
+  font-weight: bold;
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+}
+
+.main-news {
+  padding: 20px;
+  width: 43%;
+}
+
+.main-news > p {
+  font-family: "Gilda Display", sans-serif;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.main-news div.tag-container {
+  background-image: url("images/latest-news.jpg");
+  background-position: center;
+  height: 400px;
+  width: 600px;
+  position: relative;
+}
+
+#main-tag {
+  position: absolute;
+  background: #0e55a7;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-family: "Manrope", serif;
+  width: 100px;
+  right: 0px;
+  text-align: center;
+  padding: 5px 3px 5px 3px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.side-news {
+  width: 40%;
+  margin-top: 85px;
+}
+
+#news-bottom-text {
+  font-size: 31px;
+  font-family: "Gilda Display", sans-serif;
+  margin-top: 15px;
+}
+
+.date {
+  font-family: "Manrope", serif;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.side-tag {
+  background: #0e55a7;
+  padding: 3px 10px 3px 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-family: "Manrope", serif;
+  color: #ffffff;
+}
+
+.side-items div p {
+  font-family: "Gilda Display", sans-serif;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.big-btn {
+  background: #0e55a7;
+  width: 250px;
+  text-align: center;
+  font-family: "Manrope", serif;
+  font-size: 1.3em;
+  margin-left: 41.5%;
+  margin-bottom: 50px;
+  padding: 20px 40px 20px 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.latest-events {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.event-image {
+  font-family: "Gilda Display", sans-serif;
+  font-size: 40px;
+}
+
+.event-image img {
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.event-list {
+  width: 40%;
+  margin-top: 65px;
+  margin-left: 30px;
+}
+
+.event-list div.event-date {
+  display: inline-block;
+  font-family: "Gilda Display", sans-serif;
+  color: #0e55a7;
+  font-size: 1.5em;
+}
+
+.event-list > div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.event-list span {
+  font-size: 44px;
+}
+
+.event-list div.event-info {
+  position: absolute;
+  top: 10px;
+  padding: 0px 30px 30px 30px;
+  display: inline-block;
+  font-family: "Gilda Display", sans-serif;
+  color: #000000;
+  font-size: 1.5em;
+}
+
+.club-container {
+  display: grid;
+  grid-template-columns: repeat(2, 46%);
+  grid-template-rows: repeat(2, 450px);
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+.club-container img {
+  width: 100%;
+  height: 450px;
+}
+
+.clubs-text {
+  background: #f5f9ff;
+  padding: 80px 40px 30px 40px;
+}
+
+.club-container p:first-child {
+  font-family: "Gilda Display", sans-serif;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.club-container p:nth-child(2) {
+  font-family: "Manrope", serif;
+  font-size: 1.3em;
+  margin-bottom: 60px;
+}
+
+.club-btn {
+  background: #0e55a7;
+  width: 200px;
+  text-align: center;
+  font-family: "Manrope", serif;
+  font-size: 1.1em;
+  padding: 20px 40px 20px 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#social-head {
+  margin-left: 100px;
+  margin-bottom: 100px;
+  font-family: "Gilda Display", sans-serif;
+  font-size: 40px;
+}
+
+.socials-container {
+  background: #1e4da1;
+  height: 90vh;
+  width: 100%;
+  padding-top: 50px;
+  font-family: "Gilda Display", sans-serif;
+}
+.bottom-footer {
+  background: rgb(76, 109, 207);
+  height: 93px;
+  width: 1770px;
+  margin-left: -507px;
+  margin-top: 18px;
+}
+.footer-logo {
+  background-image: url("images/nile-logo-white.svg");
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 280px;
+  margin-top: 90px;
+  margin-left: 130px;
+}
+.nile-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  margin-top: -300px;
+  margin-left: 139px;
+}
+.fa-map-marker-alt {
+  font-size: 24px;
+  opacity: 0.6;
+}
+.nile-description .address {
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+}
+.nile-description .nile-phone-number {
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+}
+.fa-phone-alt {
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+.nile-side-footer {
+  position: absolute;
+  top: 7000px;
+  right: 200px;
+}
+
+div.nile-side-footer ul li {
+  padding-left: 20px;
+  font-family: "Manrope", serif;
+}
+
+.nile-footer-hr {
+  color: white;
+  width: 700px;
+  margin-left: 130px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.socials {
+  margin-left: 100px;
+}
+.socials ul {
+  list-style: none;
+}
+.socials ul li {
+  float: left;
+  padding-left: 30px;
+  padding-right: 50px;
+  color: white;
+  font-family: "Manrope", serif;
+}
+.socials ul li:hover {
+  cursor: pointer;
+}
+.nile-socials-icons {
+  margin-top: 120px;
+}
+.nile-socials-icons .fab {
+  font-size: 25px;
+  color: white;
+  opacity: 0.6;
+}
+
+.nile-side-footer ul {
+  margin-left: 340px;
+  margin-top: 150px;
+  line-height: 60px;
+  list-style: none;
+  border-left: 1px solid rgb(194, 194, 194);
+}
+.nile-side-footer ul li {
+  color: white;
+}
+#copyright {
+  color: white;
+  background-color: rgba(0, 119, 255, 0.712);
+  margin-top: 200px;
+  height: 97px;
+  padding: 40px 40px 40px 125px;
+  font-family: "Manrope", serif;
+}

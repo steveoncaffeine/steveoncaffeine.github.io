@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nile University of Nigeria</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section id="nav-sec">
+      <div class="nile-logo">
+        <img src="images/nile-logo-main.svg" alt="" />
+      </div>
+      <div class="nav-bar">
+        <a href="" class="dropdown"
+          ><span>About</span> <i class="fas fa-angle-down"></i> </a>
+        <a href="" class="dropdown"
+          ><span>Study</span> <i class="fas fa-angle-down"></i> </a>
+        <a href="" class="dropdown"
+          ><span>Admission</span> <i class="fas fa-angle-down"></i> </a>
+        <a href=""
+          ><span id="opt-fees">Pay Fees</span></a>
+        <a href="" class="dropdown"
+          ><span>Campus Life</span>  <i class="fas fa-angle-down"></i> </a>
+        <a href=""><span>Library</span></a>
+        <div class="menu-inner">
+          <img
+            id="drag-handle"
+            src="images/drag_handle_black_24dp.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="notice">
+      <p>
+        <span>NOTICE TO OUR DEAR PARENTS AND GUARDIANS</span>
+      </p>
+      <div id="arrow-right">
+        <img src="images/arrow_right_white_24dp.svg" alt="" />
+      </div>
+    </div>
+
+    <section class="slides-container">
+      <div class="slide slide-one fade">
+        <div class="slide-content">
+          <p>Admission is ongoing</p>
+          <p>Start your application with your JAMB registration number.</p>
+          <div class="slide-btn">APPLY NOW</div>
+        </div>
+      </div>
+
+      <div class="slide slide-two fade">
+        <div class="slide-content">
+          <p>
+            Nile University's MBBS Medicine & Surgery Programme Gains Full
+            Accreditation from NUC, MCDN
+          </p>
+          <div class="slide-btn fade">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="slide slide-three fade">
+        <div class="slide-content">
+			<p>
+				Nile University’s Approved JAMB Cutoff Marks for the 2021/2022 Academic Session
+			</p>
+			<p>
+				The Management of Nile University has released the approved JAMB Cutoff Marks for the 2021/2022 Academic Session.
+			</p>
+			<div class="slide-btn">LEARN MORE</div>
+		</div>
+      </div>
+      <div class="slide slide-four fade">
+		  <div class="slide-content">
+			  <p>
+				Nile University’s LLB Law Programme Gets Full Accreditation from NUC, Council of Legal Education, Increase in Law Admission Quota
+			  </p>
+			  <div class="slide-btn">LEARN MORE</div>
+		  </div>
+	  </div>
+      <div class="slide slide-five fade">
+		  <div class="slide-content">
+			  <p>Admission is Ongoing!</p>
+			  <p>Applications for our undergraduate and postgraduate programs are open. Get an understanding of the admission process and requirements for your preferred course.</p>
+			<div class="slide-btn">APPLY NOW</div>
+		  </div>
+	  	</div>
+	  <div class="slide slide-six fade">
+		  <div class="slide-content">
+			  <p>Find out about our exciting programmes</p>
+			  <p>With world-class learning facilities, outstanding research opportunities and an experienced staff body, we are well placed to offer the best learning experience.</p>
+		<div class="slide-btn">LEARN MORE</div>
+	  </div></div>
+	  <div class="slide slide-seven fade">
+		  <div class="slide-content">
+			  <p>Nile University of Nigeria is a proud member of the Honoris United Universities Network</p>
+			  <p>The first and largest pan-African private higher education network.</p>
+		<div class="slide-btn">LEARN MORE</div></div>
+	  </div>
+
+	  <div id="dot-cnt" style="text-align: center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot" onclick="currentSlide(6)"></span>
+		<span class="dot" onclick="currentSlide(7)"></span>
+	  </div>
+
+      <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a id="next" onclick="plusSlides(1);">&#10095;</a>
+    </section>
+	<section class="card-container">
+		<div class="info-card">
+			<div class="card-title">
+				<p>Undergraduate Degrees<br>
+				(B.Sc. / B.A / MBBS / LLB)</p>
+			</div><hr>
+			<div class="card-body">
+				<p>Join our lively community of undergraduate students and choose from more than 50 degree options.</p>
+			</div>
+			<div class="card-footer"><span>Learn More</span><i class="fas fa-caret-right"></i></div>
+		</div>
+		<div id="middle-card">
+      <div class="card-title">
+        <p>Postgraduate Degrees<br>
+          (PGD / M.Sc. & M.A / MPhil / PhD.)
+          </p>
+      </div><hr>
+      <div class="card-body">
+        <p>Find out how Nile University of Nigeria postgraduates shape the world we live in.</p>
+      </div>
+      <div class="card-footer"><span>Learn More</span><i class="fas fa-caret-right"></i></div>
+    </div>
+		<div class="info-card">
+      <div class="card-title">
+        <p>MBA (Executive Master of<br> Business Administration)</p>
+      </div><hr>
+      <div class="card-body">
+        <p>We develop highly skilled professional managers for organizations in different specializations. </p>
+      </div>
+      <div class="card-footer"><span>Learn More</span><i class="fas fa-caret-right"></i></div>
+    </div>
+	</section>
+
+	<section class="student-chat">
+    <h2 id="chat-header">Chat With Our Students - (Available From 9th August 2021.)</h2>
+    <div class="chat-card-container">
+      <div class="chat-card">
+        <div class="pfp-body"><img src="images/profile1.jpeg" alt="">
+        <div class="student">
+          <p>Habibah Ayinke</p>
+          <p>Mass Communication (BSc)</p>
+          <p>I COME FROM</p>
+          <p>Kwara, Nigeria</p>
+        <hr>
+        <div class="chat-button">Chat with Habiba Ayinke</div>
+      </div></div>
+      </div>
+      <div class="chat-card">
+        <div class="pfp-body"><img src="images/student2.jpeg" alt="">
+          <div class="student">
+            <p>Habibah Ayinke</p>
+            <p>Mass Communication (BSc)</p>
+            <p>I COME FROM</p>
+            <p>Kwara, Nigeria</p>
+          <hr>
+          <div class="chat-button">Chat with Habiba Ayinke</div>
+        </div></div>
+      </div>
+      <div class="chat-card">
+        <div class="pfp-body"><img src="images/student3.jpeg" alt="">
+          <div class="student">
+            <p>Habibah Ayinke</p>
+            <p>Mass Communication (BSc)</p>
+            <p>I COME FROM</p>
+            <p>Kwara, Nigeria</p>
+          <hr>
+          <div class="chat-button">Chat with Habiba Ayinke</div>
+        </div></div>
+
+      </div>
+    </div>
+	</section>
+
+  <section class="faculty-sec">
+    <div>
+      <p>Faculty</p>
+      <p>Nile University consists of six faculties united by<br> a commitment to providing education of the<br> highest quality.</p>
+      <p>Every faculty is led by reputable academics<br> dedicated to driving innovation in research and<br> learning. Discover the programs available in each<br> faculty.</p>
+      <div class="fac-btn">LEARN MORE</div>
+    </div>
+    <div class="faculty-table">
+      <table>
+        <tr>
+          <td>College of Health Sciences<i class="fas fa-long-arrow-alt-right"></i></td>
+          <td>Faculty of Arts and Social Sciences<i class="fas fa-long-arrow-alt-right"></i></td>
+        </tr>
+        <tr>
+          <td>Faculty of Engineering<i class="fas fa-long-arrow-alt-right"></i></td>
+          <td>Faculty of Law<i class="fas fa-long-arrow-alt-right"></i></td>
+        </tr>
+        <tr>
+          <td>Faculty of Management<br> Sciences<i class="fas fa-long-arrow-alt-right"></i></td>
+          <td>Faculty of Natural and Applied<br> Sciences<i class="fas fa-long-arrow-alt-right"></i></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="aim-container">
+    <div class="aim-cards">
+      <div class="aim-icon"><img src="images/global.png" alt=""></div>
+      <p>Global Ready</p>
+      <p>An international outlook with global networking opportunities</p>
+    </div>
+    <div class="aim-cards">
+      <div class="aim-icon"><img src="images/employability.png" alt=""></div>
+      <p>Employability</p>
+      <p>Career-ready graduates, with the skills to succeed</p>
+    </div>
+    </div>
+    <div class="aim-cards">
+      <div class="aim-icon"><img src="images/experience.png" alt=""></div>
+      <p>Student Experience</p>
+      <p>All the support you need in a safe, social and community setting</p>
+    </div>
+    </div>
+  </section>
+
+  <section class="logo-launch-vid">
+    <iframe width="1200" height="675" src="https://www.youtube.com/embed/CMnn7_FXfhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section class="src-pres-container">
+    <div class="src-pres-image"><img src="images/rashid-president.jpg" alt=""></div>
+    <div class="src-pres-text">
+      <p>“Nile University is a great institution with wonderful facilities, experienced lecturers, and a diverse campus community<br> comprising students and staff from various parts of the world.<br><br>
+
+        By joining Honoris United Universities, the first and largest pan-<br>African private higher education network, Nile has become even<br> more equipped to prepare students for success.<br><br>
+        
+        Since joining Honoris, we (Nile’s students) have been exposed to<br> numerous wonderful opportunities (virtual international<br> internships, increased digitization in learning, etc.) to acquire vital<br> 21st century skills. Needless to say, I am really enjoying my time here at Nile.”</p>
+        <p>Abdulkadir Haruna Rashid - Nile University (SRC President)</p>
+    </div>
+  </section>
+  <section class="news">
+    <div class="main-news">
+      <p>Latest News from Nile</p>
+      <div class="tag-container">
+        <div id="main-tag">ACTIVITIES</div>
+      </div>
+      <div id="news-bottom-text">Nile University Hosts GIABA’s 4th Annual Public Lecture on Anti-Money Laundering Regimes</div>
+      <div class="date">November 12, 2021</div>
+    </div>
+    <div class="side-news">
+       <div class="side-items">
+         <span class="side-tag">NEWS</span>
+         <div>
+           <p>Nile University’s Volleyball Team Wins the Life Camp Unity Cup</p>
+         </div>
+         <div class="date">November 1, 2021</div>
+       </div>
+       <div class="side-items">
+        <span class="side-tag">NEWS</span>
+        <div>
+          <p>Nile University Signs MoU with Voice of Nigeria</p>
+        </div>
+        <div class="date">October 26, 2021</div>
+       </div>
+       <div class="side-items">
+        <span class="side-tag">ACTIVITIES</span>
+        <div>
+          <p>Nile University Team Pays Courtesy Visit to Abuja Enterprise Agency</p>
+        </div>
+        <div class="date">October 21, 2021</div>
+       </div>
+    </div>
+  </section>
+  
+  <div class="big-btn">MORE NEWS</div>
+
+  <section class="latest-events">
+    <div class="event-image">
+      <p>Latest Events from Nile</p>
+      <img src="images/latest-event.jpg" alt="">
+    </div>
+    <div class="event-list">
+      <div><div class="event-date"><span>31</span><br>OCT</div>
+      <div class="event-info">Startup 2.0 Entrepreneurship Event</div></div>
+      <div><div class="event-date"><span>22</span><br>MAR</div>
+      <div class="event-info">5th EAI INTERSOL</div></div>
+      <div><div class="event-date"><span>1</span><br>JUN</div>
+      <div class="event-info">21st Century Skills-Problem Solving</div></div>
+      <div><div class="event-date"><span>11</span><br>MAY</div>
+      <div class="event-info">Covid-19 Response, Good Governance, &<br> Information Society: Comparative Studies</div></div>
+    </div>
+    
+  </section>
+
+  <div class="big-btn">VIEW ALL EVENTS</div>
+
+  <section class="club-container">
+    <div class="clubs clubs-text">
+      <p>Clubs & Activities</p>
+      <p>Joining a student club or an association opens the door to<br> building new friendships, enhancing your academic life, and<br> exploring career opportunities.</p>
+      <div class="club-btn">LEARN MORE</div>
+    </div>
+    <div class="clubs"><img src="images/clubs-and-activities.jpg" alt=""></div>
+    <div class="clubs"><img src="images/sports.jpg" alt=""></div>
+    <div class="clubs clubs-text">
+      <p>Sports & Recreation</p>
+      <p>Sporting activities are an important part of campus life at Nile<br> University. They provide an outlet for self-expression, fitness<br> and fun.</p>
+      <div class="club-btn">LEARN MORE</div>
+    </div>
+  </section>
+
+  <p id="social-head">Nile on Socials</p>
+
+  <section class="socials-container">
+    <div class="footer-container">
+    <div class="footer-logo">
+  
+    </div>
+    <div class="nile-description">
+    <div class="address">
+    
+    <i class="fas fa-map-marker-alt"></i>
+    &nbsp;Plot 681, Cadastral Zone C-OO, Research & <br> 
+    &nbsp; &nbsp; &nbsp;&nbsp;Institution Area, Jabi Airport Bypass, Abuja <br> 
+    &nbsp; &nbsp; &nbsp;&nbsp;FCT, 900001 Nigeria
+    </div>
+    <div class="nile-phone-number">
+    <i class="fas fa-phone-alt"></i>
+    &nbsp;
+    &nbsp;&nbsp;+234 806 735 0919 <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+234 805 489 2616
+    </div>
+  </div>
+  <hr class="nile-footer-hr">
+  <div class="nile-socials socials">
+    <ul>
+      <li>FAQS</li>
+      <li>JOBS</li>
+      <li>CONTACT</li>
+      <li>SITEMAP</li>
+    </ul>
+  </div>
+  <div class="nile-socials-icons socials">
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+  </div>
+  </div></div>
+<div class="nile-side-footer">
+  <ul>
+    <li>CELL APPLICATION</li>
+    <li>VENDOR REGISTRATION</li>
+    <li>PERSONNEL INFORMATION SYSTEM</li>
+    <li>STUDENT INFORMATION SYSTEM</li>
+    <li>NILE TV</li>
+    <li>NILE RADIO</li>
+  </ul>
+</div>
+<div id="copyright">
+  &copy; 2021 NILE UNIVERSITY
+  </div>
+  </section>
+	</body>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+	  
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+		
+
+      }
+	  
+    </script>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("nav-sec");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script>
+  </body>
+</html>
