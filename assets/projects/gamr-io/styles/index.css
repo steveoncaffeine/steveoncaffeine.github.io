@@ -214,7 +214,7 @@ body {
   text-shadow: -3px -3px #ffffff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
   .nav-bar {
     display: block;
     margin-left: 20px;
