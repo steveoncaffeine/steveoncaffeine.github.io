@@ -158,8 +158,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-bar {
-    font-size: 0.5em;
   .main-content {
     display: grid;
     grid-template-columns: repeat(2, 300px);
