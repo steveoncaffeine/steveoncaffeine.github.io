@@ -149,7 +149,35 @@ body {
   text-shadow: -3px -3px #ffffff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
+  
+  .nav-bar {
+    display: block;
+    margin-left: 20px;
+  }
+
+  #nav-account span:first-child {
+    margin-top: 200px;
+  }
+
+  .nav-bar a,
+  span {
+    display: block;
+    padding: 10px;
+  }
+
+  #main-logo-wrap img {
+    margin-left: 80px;
+  }
+
+  .nav-bar div:last-child {
+    margin-bottom: 100px;
+  }
+
+  .nav-bar div:last-child span {
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
   .main-content #ps5-ad {
     width: 720px;
     margin: 22px;
